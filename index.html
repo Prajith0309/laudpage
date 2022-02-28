@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Laud page task</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body{
+            overflow: auto;
+            margin-left: 60px;
+            background-color: black;
+        }
+        .fulldiv{
+            width: 1400px;
+            height: 1740px;
+            border: 2px solid;
+        }
+        .hidv{
+            margin-top: 0%;
+            background-color: rgba(73, 60, 60, 0.349);
+            width: 1400px;
+            height: 400px;
+        }
+        .line1{
+            margin-left: 282px;
+            font-size: 12px;
+            margin-top: 3px;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+        }
+        .kdiv{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 160px;
+        }
+        .ridv{
+            margin-top: 0%;
+            padding-left: 280px;
+            background-color:white;
+            width: 1120px;
+            height: 655px;
+        }
+        .ridva{
+            display: flex;
+            flex-direction: row;
+            margin-top: 0%;
+            background-color:white;
+            width: 1120px;
+            height: 505px;
+            column-gap: 54px;
+        }
+        .ridva1{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            margin-top: 0%;
+            background-color:white;
+            width: 370px;
+            height: 505px;
+        }
+        .ridva1>p{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        .ridva2{
+            margin-top: 0%;
+            background-color:white;
+            width: 370px;
+            height: 505px;
+        }
+        .ridvb{
+            width: 800px;
+            height: 150px;
+        }
+        .lidv{
+            border: 2px solid rgba(17, 16, 16, 0.349);
+            margin-top: 0px;
+            background-color: rgba(73, 60, 60, 0.349);
+            width: 1400px;
+            height: 150px;
+        }
+        .lidvli{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        .middlediv{
+            margin-top: 0%;
+            background-color:white;
+            width: 1400px;
+            height: 655px;
+        }
+        .middlediv>fieldset>legend {
+            display: flex;
+            flex-direction: row;
+            column-gap: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+            width:auto;
+            padding: 2px;
+            margin-left: 645px;
+        }
+        .middlediv>fieldset>legend>div>img {
+            width: 35px;
+            height: 35px;
+        }
+        .mainl{
+            margin-top: 8px;
+            font-size: 17px;
+            font-weight: 700;
+        }
+        .mainl2{
+            font-size: 17px;
+            font-weight: 700;
+        }
+        .m{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left:269px;
+            width: 800px;
+            height: 385px;
+        }
+        .ma{
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            width: 800px;
+            height: 90px;
+        }
+        .ma1>p,.ma2>p,.ma3>p,.ma4>p{
+            font-size: 9px;
+        }
+        .ma1,.ma2,.ma3,.ma4{
+            padding: 8px;
+            width: 200px;
+            height: 70px;
+            border: 2px solid rgb(7, 7, 7);
+        }
+        #ma1l1{
+            font-size: 13px;
+            font-weight: bold;
+        }
+        #ma1l2{
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: 300;
+        }
+        .mb{
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            margin-top: 40px;
+            width: 800px;
+            height: 200px;
+        }
+        .mb1{
+            width: 390px;
+            height: 200px;
+        }
+        .mb2{
+            width: 390px;
+            height: 200px;
+        }
+        .mb1>fieldset>legend{
+            font-family: Arial, Helvetica, sans-serif;
+            width:auto;
+            padding: 2px;
+            margin-left: 140px;
+        }
+        .mb2>fieldset>legend{
+            font-family: Arial, Helvetica, sans-serif;
+            width:auto;
+            padding: 2px;
+            margin-left: 90px;
+        }
+        .mb1l{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+        }
+        .ldiv{
+            display: flex;
+            flex-direction: row;
+            background-color:rgba(32, 29, 29, 0.993);
+            width: 1400px;
+            height: 210px;
+        }
+        .ldiv1{
+            padding-top: 40px;
+            margin-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgba(31, 28, 28, 0.349);
+            color: white;
+            width: 300px;
+            height: 122px;
+            margin-left: 275px; 
+        }
+        .ldiv2{
+            padding-top: 40px;
+            margin-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgba(31, 28, 28, 0.349);
+            color: white;
+            width: 150px;
+            height: 122px;
+            border: 2px solid rgb(236, 232, 232);
+            border-top: none;
+            border-bottom: none;
+        }
+        .ldiv3{
+            padding-top: 40px;
+            margin-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgba(31, 28, 28, 0.349);
+            color: white;
+            width: 300px;
+            height: 122px;
+        }
+        .ldiv1l1{
+            font-size: 13px;
+        }
+        fieldset{
+            border-top: 2px solid;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+<div class="fulldiv">
+<div class="maindiv">
+    <div class="hidv">
+      <div class="line1">
+        <div>Home</div>
+        <div>About</div>
+        <div>Achivements</div>
+      </div>
+      <div class="kdiv" style="text-align: center;line-height: 10px;">
+          <h1>Kazi Nazrul Islam</h1>
+          <h5>The national poet of Bangladesh</h5>
+      </div>
+    </div>
+    <div class="ridv">
+        <div class="ridva">
+            <div class="ridva1">
+                <h3>Rebel Poet</h3>
+                <p>Kazi Nazrul Islam is the national poet of Bangladesh who is especially recognized as a Bidrohi Kobi(rebel poet) around the country.
+                    Nazrul is afamous poet,musician and philosopher of Bangladesh. The famous poet Nazrul's writings deal with the revolution of that periid of 
+                    the British government. His revolutionary attempt helped him to be a national poet of Bangladesh. He has raised his voice against 
+                    any kind of facism and oppression and got popularity swifty around the indian subcontinent. 
+                </p>
+                <br>
+                <h3>Awesome Writer</h3>
+                <p>
+                    Nazrul's writing exprolred themes such as love,freedom,humanity,and revolution. He opposed all form of bigotry and fundamentalism, including religious, 
+                    caste-based and gender-based. Throughout his carrer, Nazrul wrote short stories, novels, and esays but is best known for his songs and poems. 
+                    He pioneered new music forms such as Bengali ghazals. Nazrul wrote and composed music for nearly 4,000 songs(many recorded on HMV and gramophone records),
+                    collectively known as Nazrul Geeti.</p>
+            </div>
+            <div class="ridva2">
+                <input type="image" name="image" alt="image" src="kazi_nazrul_islam.jpg" width="370px" height="400px" style="margin-top: 60px;">
+            </div>
+        </div>
+        <div class="ridvb" style="text-align: center;">
+            <a href=" https://en.wikipedia.org/wiki/Kazi_Nazrul_Islam" target="_blank"><input type="image" name="image" alt="image" src="learn more.jfif" width="80px" height="40px" style="margin-top: 60px;"></a>
+            <a href=" https://www.youtube.com/watch?v=E7Sj-dbZo9U" target="_blank"><input type="image" name="image" alt="image" src="watch video.png" width="80px" height="40px"></a>
+            <a href=" https://www.amazon.in/Books-Kazi-Nazrul-Islam/s?rh=n%3A976389031%2Cp_27%3AKazi+Nazrul+Islam" target="_blank"><input type="image" name="image" alt="image" src="Amazon_Books_logo.png" width="80px" height="40px"></a>
+        </div>
+    </div>
+    <div class="lidv" style=" color: white;">
+       <div class="lidvli" style="text-align: center;margin-top: 60px;"><h3>"Love has no meaning or amount."-Kazi Nazrul Islam</h3></div>
+    </div>
+</div>
+<div class="middlediv">
+    <fieldset>
+        <legend><div class="limg"><img src="black-star-icon-21.jpg"></div>
+            <div class="mainl">Awards</div></legend>
+            <div class="m">
+            <div class="ma">
+              <div class="ma1">
+                  <div id="ma1l1">Jagattarini Gold Medal</div>
+                  <div id="ma1l2">1945</div>
+                  <p>
+                      From the University of Calcutta for the work in Bengali Literature.
+                  </p>
+              </div>
+              <div class="ma2">
+                <div id="ma1l1">Padma Bhushan</div>
+                <div id="ma1l2">1960</div>
+                <p>
+                    One of the heighest civilian honours of the Republic of India.
+                </p>
+              </div>
+              <div class="ma3">
+                <div id="ma1l1">National Poet</div>
+                <div id="ma1l2">-</div>
+                <p>
+                    Conferred the title by the Government of Bangladesh.
+                </p>
+              </div>
+              <div class="ma4">
+                <div id="ma1l1">Ekushey Padak</div>
+                <div id="ma1l2">1976</div>
+                <p>
+                    Bangladesh's highest civilian honours.
+                </p>
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="mb">
+                <div class="mb1">
+                    <fieldset>
+                    <legend><div class="mainl2">Poetry</div></legend>
+                    <div class="mb1l">
+                    <ul>
+                        <li>Agni Bina (The Fiery Lute),1922</li>
+                        <li>Sanchita(Collected poems),1925</li>
+                        <li>Phanimanasa(The Cactus),1927</li>
+                        <li>Chakrabak(The Flamingo),1929</li>
+                        <li>Satbhai Chamba (The Seven Brothers of Champa),juvenile poems,1933</li>
+                        <li>Nirjhar(Fountain),1939</li>
+                        <li>Natun Chand(The New Moon),1939</li>
+                        <li>Morubhaskar(The Sun in the Dessert),1951</li>
+                        <li>Sanchayan(Collected Poems),1955</li>
+                        <li>Nazrul Islam: Islamic Kobita(A Collection of Islamic Poems; Dhaka,Bangladesh: Islamic Foundation,1982)</li>
+                    </ul>  
+                    </div>
+                    </fieldset>
+                </div>
+                <div class="mb2">
+                    <fieldset>
+                    <legend><div class="mainl2">Poems and songs</div></legend>
+                    <div class="mb1l">
+                    <ul>
+                        <li>Dolan Chapa(name of a faintly fragrant monsoon flower),1923</li>
+                        <li>Bisher Bashi(The Poison Flute),1924</li>
+                        <li>Bhangar Gan(The Song of Destruction),1924 proscribe in 1924</li>
+                        <li>Chhayanat(The Raga of Chhayanat),1925</li>
+                        <li>Chittanama(ON Chittarajan),1925</li>
+                        <li>Samyabadi( The Proclaimer of Equality),1926</li>
+                        <li>Puber Hawa(The Eastern Wind),1926</li>
+                        <li>Sarbahara(The Proletariat),1926</li>
+                        <li>Sindhu Hindol(The Undulation of the Sea),1927</li>
+                        <li>Jinjir(Chain),1928</li>
+                        <li>Pralaya Shikha(Doomsday Flame),1930 proscribed in 1930</li>
+                        <li>Shesh Saogat(The Last Offerings),1958</li>
+                    </ul> 
+                    </div> 
+                    </fieldset>
+                </div>
+            </div>
+            </div>
+    </fieldset>
+    <div class="ldiv">
+      <div class="ldiv1" style="padding: 8px;">
+          <div class="ldiv1l1">About the author</div>
+          <p>
+          <span style="font-size: 10px;font-weight: 400;">Made by</span>
+          <span style="font-size: 9px;font-weight: 100;color: grey;">Md.Abu Taher</span>
+          <span style="font-size: 10px;font-weight: 400;">for a Freecodecamp tribute challenge.</span>
+          </p>
+      </div>
+      <div class="ldiv2" style="padding: 8px;">
+        <div class="ldiv1l1">Techs Used</div>
+        <p>
+            <span style="font-size: 10px;font-weight: 400;color: grey;">Sementic UI</span>
+        </p>
+      </div>
+      <div class="ldiv3" style="padding: 8px;">
+        <div class="ldiv1l1">Conyent Disclaimer</div>
+        <p>
+            <span style="font-size: 10px;font-weight: 400;">The content of this website is mostly copied from</span>
+            <span style="font-size: 10px;font-weight: 400;color: blue;">wikipedia</span>
+            <span style="font-size: 10px;font-weight: 400;">,</span>
+            <span style="font-size: 10px;font-weight: 400;color: blue;">BiographyBD</span>
+            <span style="font-size: 10px;font-weight: 400;">,</span>
+            <span style="font-size: 10px;font-weight: 400;color: blue;">Thefamouspeople</span>
+            <span style="font-size: 10px;font-weight: 400;">.</span>
+            <span style="font-size: 10px;font-weight: 400;">Original credits goes to the respective authors.</span>
+        </p>
+      </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
